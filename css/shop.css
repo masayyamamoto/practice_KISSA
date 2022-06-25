@@ -121,6 +121,8 @@ max-width: 380px;
   font-weight: bold;
   margin-top: 20px;
 }
+
+/* 黄色いボタン */
 .about-item a {
   background-color: #f4dd64;
   display: inline-block;

@@ -56,7 +56,42 @@
     <!-- お問い合わせフォーム -->
     <div class="contact">
       <h2>お問い合わせフォーム</h2>
-      <form action="#"></form>
+
+      <form action="#">
+        <dl class="form-area">
+          <!-- テキスト入力エリア１行ずつ -->
+          <dt><span class="required">お名前</span></dt>
+          <dd><input class="input-text" type="text" name="name" required></dd>
+          <dt><span class="required">メールアドレス</span></dt>
+          <dd><input class="input-text" type="email" name="email" required></dd>
+          <dt>お電話番号</dt>
+          <dd><input class="input-text" type="tel" name="tel"></dd>
+
+          <dt>お問合せ種別</dt>
+          <!-- プルダウンセレクトメニュー -->
+          <dd>
+            <select class="select-box" name="genre">
+              <option value="ご予約について" slected>ご予約について</option>
+              <option value="メニューについて">メニューについて</option>
+              <option value="営業時間について">営業時間について</option>
+            </select>
+          </dd>
+          <dt>お客様について</dt>
+          <!-- ラジオボタン -->
+          <dd>
+            <label class="radio-button"><input type="radio" name="user-type" value="一般のお客様" checked>一般のお客様</label>
+            <label class="radio-button"><input type="radio" name="user-type" value="お取引先様">お取引先様</label>
+            <label class="radio-button"><input type="radio" name="user-type" value="その他">その他</label>
+          </dd>
+          <!-- テキストエリア -->
+          <dt><span class="required">お問い合わせ内容</span></dt>
+          <dd>
+            <textarea class="message" name="message" required></textarea>
+          </dd>
+        </dl>
+          <p class="confirm-text">ご入力内容をご確認の上、お間違いがなければ [Submit] ボタンを押してください。</p>
+      </form>
+      <button class="submit-button" type="submit">Submit</button>
     </div>
 
   </main>
